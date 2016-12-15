@@ -11,6 +11,10 @@ use yii\db\Query;
 
 class CustomerController extends Controller
 {
+    public $modelClass = 'api\modules\v1\models\Customer';
+    public $quoteClass = 'api\modules\v1\models\Quote';
+    public $quoteController = 'api\modules\v1\controllers\QuoteController';
+
     public function behaviors()
     {
         return [

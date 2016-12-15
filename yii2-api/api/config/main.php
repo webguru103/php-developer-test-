@@ -51,6 +51,14 @@ return [
                     'tokens' => [
                         '{id}' => '<id:\\w+>'
                     ]
+                ],
+
+                [
+                    'class' => 'yii\rest\UrlRule', 
+                    'controller' => 'v1/customer',
+                    'tokens' => [
+                        '{id}' => '<id:\\w+>'
+                    ]
                 ]
             ],        
         ]
